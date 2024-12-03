@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Fonts
+$font-stack: "Poppins", serif;
+
+$font-weight-extralight: 200;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+
+
+//Colors
+$font-color-red: #ea5353;
+$font-color-cyan: #45d3d3;
+$font-color-orange: #fcaf4a;
+$font-color-blue: #549ef2;
+
+$font-color-n1: #4c4e61;
+$font-color-n2: #a3a5ae;
+$font-color-n3: #fafafa;
+
+:root {
+    font-family: $font-stack;
+}
+
+body {
+    width: 100%;
+    padding: 80px 165px;
+
+    @media screen and (max-width: 64em) {
+        padding: 80px 70px;
+    }
+
+    @media screen and (max-width: 48em) {
+        padding: 85px 32px;
+    }
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: 64px;
+
+    @media screen and (max-width: 48em) {
+        font-size: 76px;
+    }
+
+    h1 {
+        font-weight: $font-weight-extralight;
+        color: $font-color-n1;
+        font-size: 2.25rem;
+        line-height: auto;
+        letter-spacing: 0.25px;
+
+        @media screen and (max-width: 23.438em) {
+            font-size: 1.5rem;
+        }
+
+        strong {
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+    p {
+        color: $font-color-n2;
+        font-weight: $font-weight-regular;
+        font-size: 0.938rem;
+        line-height: 25px;
+        letter-spacing: 0.1px;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+
+    @media screen and (max-width: 48em) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 26.5625em) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .card  {
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        border-radius: 8px;
+        height: 100%;
+        box-shadow: 0px 15px 30px -11px  rgba($font-color-blue, 0.5);
+    
+        h2 {
+            font-weight: $font-weight-semibold;
+            font-size: 1.25rem;
+            color: $font-color-n1;
+            line-height: auto;
+            letter-spacing: 0px;
+            margin-bottom: 6px;
+        }
+        p {
+            font-weight: $font-weight-regular;
+            font-size: 0.813rem;
+            line-height: 23px;
+            letter-spacing: 0.09px;
+            margin-bottom: 40px;
+            color: $font-color-n2;
+        }
+    
+        img {
+            justify-self: end;
+            align-self: end;
+        }
+    }
+    
+    #supervisor {
+        grid-area: 2 / 1 / 4 / 3;
+        border-top: 4px solid $font-color-cyan;
+    }
+    
+    #team-builder {
+        grid-area: 1 / 3 / 3 / 5;
+        border-top: 4px solid $font-color-red;
+    }
+    
+    #karma {
+        grid-area: 3 / 3 / 5 / 5;
+        border-top: 4px solid $font-color-orange;
+    }
+    
+    #calculator {
+        grid-area: 2 / 5 / 4 / 7;
+        border-top: 4px solid $font-color-blue;
+    }
+
+    @media screen and (max-width: 48em) {
+        #supervisor {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        
+        #team-builder {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        
+        #karma {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        
+        #calculator {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+    }
+
+    @media screen and (max-width: 26.5625em) {
+        #supervisor, #team-builder, #karma, #calculator {
+            grid-area: unset;
+        }
+    }
+}
