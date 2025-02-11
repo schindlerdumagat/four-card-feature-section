@@ -18,61 +18,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="styles/stylesheets/style.css">
   </head>
   <body>
-    <header>
-      <h1>
-        Reliable, efficient delivery <br />
-        <strong>Powered by Technology</strong>
-      </h1>
-      <p>
-        Our Artificial Intelligence powered tools use millions of project data
-        points to ensure that your project is successful
-      </p>
-    </header>
-    <main>
-      <section id="supervisor" class="card" aria-labelledby="supervisor-section">
-        <h2 id="supervisor-section">Supervisor</h2>
-        <p>
-          Monitors activity to identify project roadblocks
-        </p>
-        <img
-          src="images/icon-supervisor.svg"
-          alt="Magnifying glass"
-        />
-      </section>
-      <section id="team-builder" class="card" aria-labelledby="team-builder-section">
-        <h2 id="team-builder-section">Team Builder</h2>
-        <p>
-          Scans our talent network to create the optimal team for your project
-        </p>
-        <img
-          src="images/icon-team-builder.svg"
-          alt="Magnifying glass"
-        />
-      </section>
 
-      <section id="karma" class="card" aria-labelledby="karma-section">
-        <h2 id="karma-section">Karma</h2>
-        <p>
-          Regularly evaluates our talent to ensure quality
-        </p>
-        <img
-          src="images/icon-karma.svg"
-          alt="Magnifying glass"
-        />
-      </section>
-      <section id="calculator" class="card" aria-labelledby="calculator-section">
-        <h2 id="calculator-section">Calculator</h2>
-        <p>
-          Uses data from past projects to provide better delivery estimates
-        </p>
-        <img
-          src="images/icon-calculator.svg"
-          alt="Magnifying glass"
-        />
-      </section>
+    <header class="header">
+      <h1 class="header__title">Reliable, efficient delivery <strong class="header__title--highlighted">Powered by Technology</strong></h1>
+      <p class="header__description">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+    </header>
+
+    <main class="grid">
+      <div class="grid__item">
+        <div class="card card--top-border-cyan">
+          <h2 class="card__title">Supervisor</h2>
+          <p class="card__description">Monitors activity to identify project roadblocks</p>
+          <img class="card__img" src="images/icon-supervisor.svg" alt="">
+        </div>
+      </div>
+      <div class="grid__item">
+        <div class="card card--top-border-red">
+          <h2 class="card__title">Team Builder</h2>
+          <p class="card__description">Scans our talent network to create the optimal team for your project</p>
+          <img class="card__img" src="images/icon-team-builder.svg" alt="">
+        </div>
+      </div>
+      <div class="grid__item">
+        <div class="card card--top-border-orange">
+          <h2 class="card__title">Karma</h2>
+          <p class="card__description">Regularly evaluates our talent to ensure quality</p>
+          <img class="card__img" src="images/icon-karma.svg" alt="">
+        </div>
+      </div>
+      <div class="grid__item">
+        <div class="card card--top-border-blue">
+          <h2 class="card__title">Calculator</h2>
+          <p class="card__description">Uses data from past projects to provide better delivery estimates</p>
+          <img class="card__img" src="images/icon-calculator.svg" alt="">
+        </div>
+      </div>
     </main>
   </body>
 </html>

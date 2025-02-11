@@ -1,0 +1,32 @@
+// Font
+
+$font-stack: "Poppins", serif;
+$font-size-body: 0.813rem;
+
+// Color
+
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+body {
+    font-family: $font-stack;
+    font-size: $font-size-body;
+    background-color: $very-light-gray;
+    color: $grayish-blue;
+    padding: 85px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    color: $very-dark-blue;
+    font-weight: 600;
+}
